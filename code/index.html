@@ -1,0 +1,123 @@
+<HTML>
+<HEAD>
+<TITLE>Source for small unix programs -- uuencode, xxencode, miterm</TITLE>
+<META NAME="KEYWORDS" CONTENT="terminal, telnet, uuencode, xxdecode, miterm, selterm">
+
+</HEAD>
+<BODY BGCOLOR="#000000"
+      TEXT="#EEEEFF" LINK="#FFDF00" VLINK="#FFCCCC" ALINK="#FF0000"
+      BACKGROUND="../ct.jpg">
+
+These are a few of my C source hacks that have stood the test of time.
+I use most of them very frequently even now years after they were first
+written.
+The last few are not used as frequently, but when I need them I really do!
+<P>
+<H2>
+<A HREF="filt.c">filt.c</A>
+</H2>
+<P>
+This is an ANSI filter progam, it understands ANSI escape sequences and
+when it sees them in it's input stream it either interprets or strips
+them to provide a plain ASCII output.
+<P>
+
+<H2>
+<A HREF="hd.c">hd.c</A>
+</H2>
+<P>
+A hexdump program in the SCO Xenix format. 
+Includes a -r option to reverse the hexdump.
+<P>
+
+<H2>
+<A HREF="modem_rt.c">modem_rt.c</A>
+</H2>
+<P>
+Perform a <B>hard</B> reset of a modem and serial line.
+If there is a connection on the line this <B>will</B> tear it down.
+If this cannot reset your modem then you need to repair your modem!
+<P>
+
+<H2>
+<A HREF="selterm.c">selterm.c</A>
+</H2>
+<P>
+Very simple modem program in the style of 'cu'.
+<P>
+
+<H2>
+<A HREF="sscript.c">sscript.c</A>
+</H2>
+<P>
+Simple scripting support for selterm.c.
+<P>
+
+<H2>
+<A HREF="term.c">term.c</A>
+</H2>
+<P>
+Very simple modem program in the style of 'cu', older version,
+also known as 
+<A HREF="term.c">miterm.c</A>.
+<P>
+
+<H2>
+<A HREF="uudecode.c">uudecode.c</A>
+</H2>
+<P>
+Complete multi-part decoder for uudecode, xxdecode, base64 and yEnc files.
+Understands many Subject and section headers to allow joining of multipart
+uuencode files in the correct order.
+Can detect corrupt data and will ignore corrupt uuencoded sections.
+Does not require uue segments to be in seperate files and can even work
+under situations like this:
+<pre>
+         cat command_list | nc news nntp | uudecode -v
+</pre><P>
+This program does not understand MIME headers, however this does not 
+stop it detecting and decoding every piece of base64 it's given.
+(Including pgp ascii armoured)
+<P>
+
+<H2>
+<A HREF="xxencode.c">xxencode.c</A>
+</H2>
+<P>
+Standard encode and decoder (no multipart) for uuencode, xxencode, 
+posix-mmencode and even old style uuencode files.
+Understands and generates 'table' and line checksum constructs.
+<P>
+
+<H2>
+<A HREF="fold.c">fold.c</A>
+</H2>
+<P>
+This program word wraps it's input at -wNN columns, the really smart bit
+is that it will autodetect LF, CR-LF or CR as the end of line terminator
+on it's input. The dumb bit is that it's write only code; ugly!
+If given a -r flag it will remove single linefeeds in it's input and fold
+that. The -iNN flag specifies an indent for the output.
+<P>
+
+<H2>
+<A HREF="read_tape.c">read_tape.c</A>
+</H2>
+<P>
+Extract or hexdump the contents of a tape to a file.
+Understands several IBM EBCDIC tape formats.
+<P>
+
+<H2>
+<A HREF="bin2mpeg.c">bin2mpeg.c</A>
+</H2>
+<P>
+This program converts information from the BIN file of a bin/cue set
+or from a AVSEQ01.DAT file on the windows view of a vcd into an mpeg or
+mpeg2 file.
+It's dumber than for example vcdgear but this sometimes lets it extract
+more broken files.
+<P>
+
+</BODY>
+</HTML>

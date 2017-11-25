@@ -1,0 +1,151 @@
+<HTML>
+<HEAD>
+<TITLE>Robert's Homepage</TITLE>
+<META NAME="KEYWORDS" CONTENT="Debath, linux, ELKS, dev86, dev-86, dosemu, emulator">
+
+<BASE target="_top" />
+</HEAD>
+<BODY BGCOLOR="#000000" 
+      TEXT="#EEEEFF" LINK="#FFDF00" VLINK="#FFCCCC" ALINK="#FF0000" 
+      BACKGROUND="ct.jpg">
+
+<CENTER> <TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0> <TD WIDTH=540>
+
+<H2>Robert de Bath</H2>
+
+<FONT SIZE=-1>
+This page
+last updated: Sat May 31  8:21 2014
+<BR>
+My mail address:
+<A HREF="mailto:robert$@debath.co.uk">robert$@debath.co.uk</A>
+<BR>
+My web address:
+<A HREF="http://www.debath.co.uk/">http://www.debath.co.uk/</A>
+<P>
+</FONT>
+<FONT COLOR="#FF2020" SIZE=-1>
+This page exists primarily as a distribution channel for the software
+I've written or distribute.  So if you're looking for interesting
+personal stuff, you're out of luck.
+
+<P>
+</FONT>
+<P><IMG SRC="pat_crum.gif" HEIGHT=6 WIDTH=540
+ALT="-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"><br>
+
+<H2>My Tiny Tools</H2>
+<A HREF="code/index.html">This</A>
+is a small collection of C programs that I have written because I needed a
+job done.
+
+Some haven't been changed in a very long time (The text folding/refolding
+one in particular hadn't been changed in 10 years until I found a buffer
+overflow!) but I still use these pretty often.
+
+<P><IMG SRC="pat_crum.gif" HEIGHT=6 WIDTH=540
+ALT="-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"><br>
+<H2>Terminal emulator for the IBM-PC</H2>
+<A HREF="talk.zip">This</A> is a simple MSDOS terminal emulator program
+for direct serial port, bios emulators and telnet over a packet driver.
+
+It's basic emulation is identical to the SCO-Xenix console with a few
+additions including a multi-page facility that works well with the SCO
+'mscreen' utility.
+<P>
+At one point I added facilities to allow it to work 'perfectly' with
+<A HREF="http://www.linux.org/">Linux</A>
+<A HREF="http://www.dosemu.org/">DOSEMU</A>:
+This isn't perfect but many items (ALT-codes, Function keys, most
+of the 'extra' keys for example) do work. Because of this you may find
+it a little difficult to exit - press the two shift keys together followed
+by Escape.
+
+(This and the BRS are the _only_ ways out! C-A-D sends "^^a^^c^^Kd")
+<P>
+The <A HREF="talk.zip">program zipfile</A> is 80k big and was last
+modified on 10/Jul/1999.
+
+<P><IMG SRC="pat_crum.gif" HEIGHT=6 WIDTH=540
+ALT="-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"><br>
+<H2>Tiny BBC micro simulator</H2>
+<A HREF="bbcemu.tar.gz">This</A> is a little 6502C emulator, at the time of
+writing it could simulate a 6502C at full speed on a poor machine; it can now
+do extreme clock rates.
+<P>
+You will need some <A HREF="bbc_roms.zip">BBC roms</A> to try the emulator.
+<P>
+By the way if there's anybody around with authority to change the
+copyright license on these roms the community would request that you
+explicitly allow them to be distributed and used for machine emulators. 
+I'm currently assuming that either nobody cares or that such a clause 
+exists; if this is not so please
+<A HREF="mailto:robert$@debath.co.uk?subject=BBC%20Roms">contact me</A>
+at the above address.
+
+<P><IMG SRC="pat_crum.gif" HEIGHT=6 WIDTH=540
+ALT="-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"><br>
+
+<H2>Linux 8086 development environment.</H2>
+This is based on <A HREF="mailto:bde@FreeBSD.org">Bruce Evans</A>'s C
+compiler with additonal code, including a reasonable C library for ELKS
+DOS or standalone, written by myself and others.
+<P>
+This is the source mainly for use with
+<A HREF="http://www.linux.org">Linux i386</A>
+but should work with other unix versions, within Linux the assembler and linker
+are used for bootblocks, 
+<A HREF="http://www.dosemu.org/">DOSEMU</A>
+and other packages.
+<P>
+<A HREF="http://v3.sk/~lkundrak/dev86/">TAR.gz distribution</A>
+<P>
+<A HREF="https://github.com/lkundrak/dev86">GIT repository</A>
+<!--
+<P>
+<A HREF="dev86/Dev86src-0.16.19.tar.gz">version 0.16.19 (700k)</A>
+or
+<A HREF="dev86/patch-0.16.19.gz">this patch file</A>
+ (which updates from the previous version)
+<P>
+Also available is 
+<A HREF="dev86/bin86-0.16.19.tar.gz">bin86-0.16.19.tar.gz</A>,
+<A HREF="dev86/as86-0.16.19.tar.gz">as86-0.16.19.tar.gz</A>
+and various other
+<A HREF="dev86/">versions</A>.
+<P>
+This software is part of the
+
+<A HREF="http://elks.sourceforge.net/">ELKS</A>
+
+(Embeddable Linux Kernel Subset) project.
+<P>
+TO REPEAT the current version has a lot of very new code including the
+entire C-preprocessor so beware.
+<P>
+BTW: Just for you ELKSers here's a nice simple boot selector 
+<A HREF="bteasy14.zip">(bteasy14.zip)</A>
+so you can keep DOS on the PC for my little talk program below :-)
+-->
+
+<P><IMG SRC="pat_crum.gif" HEIGHT=6 WIDTH=540
+ALT="-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"><br>
+
+</TD> </TABLE>
+
+<H2>My public PGP key:</H2>
+<LISTING>
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: 2.6.3i
+
+mQCNAiwDwtcAAAEEAMecIqJphvyK0WfHqVTXvVt0yF2ZzMkCIDeuriYMDrMmtSyZ
+hu9JeABzTFkeHMRL3DFG7cFrb26BE1QWZlal3mIHbRyaM+U0uGFFzKjcBKzUdVo9
+A9yUVBVNKExB90+M1JSXbo0EI2L+AbwjJrST1gbBfFJ5xInt6P4n+0pHjHHfAAUT
+tCtSb2JlcnQgZGVCYXRoIDxyZGViYXRoQGNpeC5jb21wdWxpbmsuY28udWs+iQBV
+AwUQMILDg3qCe08Un+XVAQFYEwH9EQabeGFd7HKa0V6cxVDWiiM8FqZMJljthBI9
+xUZtOsmKcIxC01nJs58TenWb1KjX3uFe86EzVroSqfIZg/Shqg==
+=t1Fl
+-----END PGP PUBLIC KEY BLOCK-----
+</LISTING>
+</BODY>
+</HTML>
